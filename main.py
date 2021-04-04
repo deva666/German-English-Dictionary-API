@@ -1,3 +1,4 @@
+from werkzeug.exceptions import abort
 from translation import TranslationService
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
@@ -16,6 +17,8 @@ class TranslationResource(Resource):
         term = args['term']       
         limit = args['limit'] or 100
         page = args['page'] or 0
+        if limit < 0 or page < 0:
+            abort(400)
         result = self.translation.translate(term, limit, page)
         return result
 
