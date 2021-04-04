@@ -2,9 +2,6 @@ import sqlite3
 import re
 from contextlib import closing
 
-from werkzeug.exceptions import abort
-from werkzeug.wrappers import Response
-
 
 class Repository:
     def query(self, term: str):
