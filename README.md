@@ -1,9 +1,9 @@
 # German - English Dictionary REST API
 
-Searches over 300.000 words and phrases. 
-Search in either German or English. 
-Built with Python and Flask. 
-Hosted on Google App Engine. 
+Searches over 300.000 words and phrases.  
+Search in either German or English.  
+Built with Python and Flask.  
+Hosted on Google App Engine.  
 
 ## API Documentation
 Base Url for requests: `https://german-english-dictionary-api.uc.r.appspot.com/`
