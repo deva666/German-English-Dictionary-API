@@ -9,7 +9,7 @@ Hosted on Google App Engine.
 Base Url for requests: `https://german-english-dictionary-api.uc.r.appspot.com/`
 
 ## Endpoints
-GET `/translate` Translate a word or a phrase
+GET `/translate` Translate a word or a phrase  
 Query Parameters:
 - `term` - mandatory, german or english string that will be translated
 - `limit` - optional, results limit (default=100)
